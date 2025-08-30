@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato Navbar</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(45deg, red, darkred);">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold fs-3" href="#">Zomato</a>
+    </div>
+  </nav>
+
+    <div class="container m-0">
+    <h2 class="fw-bold">Non Veg :-</h2>
+    <p class="mt-3">
+      Our Non-Veg section brings you a wide variety of delicious dishes including spicy chicken curries, 
+      mouth-watering kebabs, fish delicacies, and mutton biryanis. Perfectly cooked with aromatic spices, 
+      these dishes are loved by foodies all around the world. Enjoy the richness of flavors and indulge in 
+      a satisfying dining experience.
+    </p>
+  </div>
+
+   <div class="container my-5">
+    <h3 class="fw-bold">Non Veg Menu</h3>
+    <table class="table table-bordered text-center align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Zid</th>
+          <th scope="col">Name</th>
+          <th scope="col">Image</th>
+          <th scope="col">Price (₹)</th>
+          <th scope="col">Qty</th>
+          <th scope="col">Total Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>101</td>
+          <td>Chicken Biryani</td>
+          <td><img src="https://th.bing.com/th/id/OIP.L5h-VtaM3TjRxK2H2NoFHgHaHa?w=257&h=193&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="img-fluid rounded" alt="Chicken Biryani"></td>
+          <td>250</td>
+          <td>
+            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-dash"></i></button>
+            <span class="mx-2">2</span>
+            <button class="btn btn-sm btn-outline-success"><i class="bi bi-plus"></i></button>
+          </td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>102</td>
+          <td>Fish Curry</td>
+          <td><img src="https://th.bing.com/th/id/OIP.QQBPyPZRMocaQUk013IVDgHaEK?w=168&h=150&c=6&o=7&dpr=1.3&pid=1.7&rm=3" class="img-fluid rounded" alt="Fish Curry"></td>
+          <td>300</td>
+          <td>
+            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-dash"></i></button>
+            <span class="mx-2">1</span>
+            <button class="btn btn-sm btn-outline-success"><i class="bi bi-plus"></i></button>
+          </td>
+          <td>300</td>
+        </tr>
+        <tr>
+          <td>103</td>
+          <td>Mutton Kebab</td>
+          <td><img src="https://th.bing.com/th/id/OIP.J8XlvvWIZSlvoXmuUcZDxAHaE3?w=248&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" class="img-fluid rounded" alt="Mutton Kebab"></td>
+          <td>200</td>
+          <td>
+            <button class="btn btn-sm btn-outline-danger"><i class="bi bi-dash"></i></button>
+            <span class="mx-2">3</span>
+            <button class="btn btn-sm btn-outline-success"><i class="bi bi-plus"></i></button>
+          </td>
+          <td>600</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+
+</body>
+</html>
