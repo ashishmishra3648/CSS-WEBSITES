@@ -110,5 +110,46 @@ Bootstrap 5
 
 <img width="1886" height="876" alt="image" src="https://github.com/user-attachments/assets/126bb592-945c-4a68-b49f-f7a46ec5f508" />
 
+=====================================================================================================================================================================================
+# ✏️ Smart Input Box Utility
+A user-friendly web tool designed with Bootstrap 5, allowing users to efficiently manage text input in real time. This interface combines interactive controls with attractive design, making it ideal for text editing and analysis tasks.
+
+## 🚀 Features
+🔹 Single Input Box:
+Enter any text, numbers, or symbols in a clean, centered field with rounded borders and subtle shadow for modern appeal.
+
+🔹 CLEAR Button:
+Instantly removes all content from the input box with a single click, helping users reset and start fresh.
+
+🔹 BACKSPACE Button:
+Deletes only the last character from the input box for quick corrections—no need to use the keyboard.
+
+🔹 COUNT CHARACTER Button:
+Calculates and displays the total number of non-space characters in the input. Results are shown in a separate, visually distinct output box.
+
+🔹 Separate Count Display:
+The character count result appears below the main input, styled as a highlighted badge or info box for easy visibility.
+
+🔹 Bootstrap Enhanced Styling:
+Utilizes Bootstrap's spacing (margin, padding), color schemes, button groups, and responsive design for an attractive look and seamless user experience across devices.
+
+## 🛠️ Tech Stack
+HTML5
+
+Bootstrap 5
+
+JavaScript
+
+## 📄 User Flow
+Type content in the input box.
+
+Use CLEAR to erase everything, BACKSPACE to remove the last character, or COUNT CHARACTER to see the total character count (excluding spaces) instantly in a result box.
+
+Enjoy a visually pleasing layout, with all controls spaced and padded for clarity and comfort.
+
+## Demo Preview 
+<img width="1715" height="805" alt="image" src="https://github.com/user-attachments/assets/50f3cc14-a490-4ca7-a846-d008d7568f06" />
+
+
 
 
