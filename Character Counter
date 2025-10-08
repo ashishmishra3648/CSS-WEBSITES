@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Character Utility</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #d1f2ff 0%, #fff1ea 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      max-width: 400px;
+      padding: 2rem 1.2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 10px 26px rgba(0,0,0,0.1);
+    }
+    .result-box {
+      margin-top: 18px;
+      padding: 0.7rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      background: #ecfcff;
+      color: #1387bb;
+      border-radius: 1rem;
+      text-align: center;
+    }
+    .btn-group .btn {
+      min-width: 115px;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card mx-auto">
+    <h4 class="text-center mb-3" style="color:#1387bb;">Character Counter</h4>
+    <input type="text" id="inputBox" class="form-control mb-3" placeholder="Enter text...">
+    <div class="d-flex justify-content-between btn-group mb-2">
+      <button class="btn btn-danger" id="clearBtn">CLEAR</button>
+      <button class="btn btn-warning" id="backspaceBtn">BACKSPACE</button>
+      <button class="btn btn-info text-white" id="countBtn">COUNT CHARACTER</button>
+    </div>
+    <div class="result-box" id="result">Character Count (excluding spaces): <span id="charCount">0</span></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const inputBox = document.getElementById('inputBox');
+    const clearBtn = document.getElementById('clearBtn');
+    const backspaceBtn = document.getElementById('backspaceBtn');
+    const countBtn = document.getElementById('countBtn');
+    const charCount = document.getElementById('charCount');
+    clearBtn.onclick = function() {
+      inputBox.value = '';
+      charCount.textContent = '0';
+    };
+    backspaceBtn.onclick = function() {
+      inputBox.value = inputBox.value.slice(0, -1);
+    };
+    countBtn.onclick = function() {
+      charCount.textContent = inputBox.value.replace(/ /g, '').length;
+    };
+  </script>
+</body>
+</html>
