@@ -82,11 +82,13 @@ This project is designed to mimic a menu page similar to **Zomato**, where users
 
 
 =====================================================================================================================================================================================
-🎓 Student Portal
+
+
+# 🎓 Student Portal
 A simple student management web application built using HTML and Bootstrap 5.
 This project is designed to provide a centralized platform where users can view, filter, and interact with student records in a visually organized and user-friendly interface.
 
-🚀 Features
+## 🚀 Features
 🔹 Responsive Navbar with Student Portal branding
 
 🔹 Easy navigation with filter buttons for All Students, Male, and Female
@@ -99,12 +101,12 @@ This project is designed to provide a centralized platform where users can view,
 
 🔹 Optimized for both desktop and mobile devices
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 HTML5
 
 Bootstrap 5
 
-📷 Demo Preview
+## 📷 Demo Preview
 
 <img width="1886" height="876" alt="image" src="https://github.com/user-attachments/assets/126bb592-945c-4a68-b49f-f7a46ec5f508" />
 
