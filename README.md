@@ -150,6 +150,61 @@ Enjoy a visually pleasing layout, with all controls spaced and padded for clarit
 ## Demo Preview 
 <img width="1715" height="805" alt="image" src="https://github.com/user-attachments/assets/50f3cc14-a490-4ca7-a846-d008d7568f06" />
 
+=====================================================================================================================================================================================
+
+
+# Interactive Counter Box
+A responsive and visually appealing counter application with color-coded feedback based on the current count value. Built with HTML, CSS, and Bootstrap.
+
+## 🚀 Features
+➕➖ Interactive counter with plus and minus buttons
+
+🎨 Dynamic color coding:
+
+🔴 Red for negative numbers
+
+⚪ White for zero
+
+🟢 Green for positive even numbers
+
+🔵 Blue for positive odd numbers
+
+🔄 Reset functionality
+
+📱 Fully responsive design
+
+♿ Accessibility features with ARIA labels
+
+🎯 Smooth transitions and hover effects
+
+## 🛠️ Tech Stack
+HTML5
+
+CSS3
+
+Bootstrap 5
+
+Bootstrap Icons
+
+## How It Works
+Interactive Controls: Use the + and - buttons to increment or decrement the counter
+
+Visual Feedback: The background color changes based on the current count value:
+
+🔴 Red for negative numbers
+
+⚪ White for zero
+
+🟢 Green for positive even numbers
+
+🔵 Blue for positive odd numbers
+
+Reset Function: Click the "Reset Counter" button to return the count to zero
+
+Responsive Design: The layout adapts to different screen sizes while maintaining functionality
+
+## Demo Preview
+<img width="1847" height="856" alt="image" src="https://github.com/user-attachments/assets/2c2a9065-969a-4dd3-8bbb-f466ee02c28f" />
 
 
 
