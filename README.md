@@ -278,7 +278,38 @@ A clean and modern web application built with **HTML5**, **CSS3**, and **Bootstr
 ## Demo Preview
 <img width="1000" height="845" alt="image" src="https://github.com/user-attachments/assets/b8f12cea-612b-4eac-bf0e-77ff4ebc920d" />
 
+=====================================================================================================================================================================================
+
+# Simple Circle Mover
+
+## Overview
+An interactive and visually appealing web application built with **HTML5**, **CSS3**, and **Bootstrap 5**. It features a simple circle that can be moved smoothly within the viewport using on-screen arrow buttons as well as keyboard arrow keys.
+
+## Features
+- **Simple Circle Element**: A blue circle that stands out with subtle shadow effects.
+- **Movement Buttons**: Up, Down, Left, and Right buttons with Bootstrap Icons that move the circle by one step.
+- **Keyboard Support**: Use arrow keys to move the circle similarly.
+- **Responsive & Accessible**: Keyboard focus is managed for accessibility, and the movement is confined within the visible window.
+- **Smooth Transitions**: Animations on movement provide a seamless visual effect.
+
+## Tech Stack
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5**
+- **Bootstrap Icons**
+- **Vanilla JavaScript**
+
+## Usage
+1. Click the arrow buttons to move the circle up, down, left, or right.
+2. Alternatively, press the arrow keys on the keyboard to move the circle.
+3. The circle will remain within the window boundaries and animate smoothly.
+
+## Accessibility
+- Proper ARIA labels and keyboard focus management make the application accessible.
+- Visual states and transitions provide clear feedback on movement.
 
 
+## Demo Preview
+<img width="655" height="643" alt="image" src="https://github.com/user-attachments/assets/13c28778-3780-4d3d-acf1-6bc23a7d420e" />
 
 
