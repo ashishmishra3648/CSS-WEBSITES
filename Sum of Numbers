@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Number Sections and Sums</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(120deg, #e6f6ff 0%, #f6faff 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .number-container {
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      border-radius: 1.25rem;
+      box-shadow: 0 0.4rem 1.1rem rgba(80,120,200,0.09);
+      padding: 2rem 1.3rem;
+    }
+    .section-title {
+      font-weight: 600;
+      color: #2282c9;
+      font-size: 1.11rem;
+      margin-bottom: 0.7rem;
+    }
+    .divider {
+      border-top: 2px solid #cce7fe;
+      margin: 2rem 0 1.2rem 0;
+    }
+    .num-list {
+      padding: 0.5rem;
+      border-radius: 0.6rem;
+      background: #f5fbff;
+      min-height: 34px;
+      margin-bottom: 0.7rem;
+    }
+    .num-list span {
+      display: inline-block;
+      background: #e2faff;
+      color: #136797;
+      font-weight: 500;
+      margin: 0.14em 0.38em 0.17em 0;
+      padding: 0.22em 0.8em;
+      border-radius: 1rem;
+      font-size: 1.1rem;
+    }
+    .sum-box {
+      background: #ddfbe7;
+      padding: 1.05rem;
+      border-radius: 1.07rem;
+      font-size: 1.15rem;
+      color: #14522a;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 0.7rem;
+      box-shadow: 0 0.4rem 1rem #b9e9c3aa;
+    }
+    .btn {
+      min-width: 110px;
+    }
+    @media (max-width: 575px) {
+      .number-container {padding: 1.1rem 0.7rem;}
+      .btn {min-width: 80px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="number-container shadow">
+    <!-- Number 1 Section -->
+    <div>
+      <label class="section-title" for="num1input">Number 1</label>
+      <div class="input-group mb-2">
+        <input type="number" class="form-control" id="num1input" placeholder="Enter number 1">
+        <button class="btn btn-primary" id="addNum1">Add</button>
+      </div>
+      <div class="num-list" id="num1List"></div>
+      <div class="d-grid mb-2">
+        <button class="btn btn-outline-primary" id="sumNum1Btn">Sum Number 1</button>
+      </div>
+      <div class="sum-box" id="sumNum1Box" style="display:none;">
+        Sum Number 1: <span id="sumNum1"></span>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Number 2 Section -->
+    <div>
+      <label class="section-title" for="num2input">Number 2</label>
+      <div class="input-group mb-2">
+        <input type="number" class="form-control" id="num2input" placeholder="Enter number 2">
+        <button class="btn btn-info text-white" id="addNum2">Add</button>
+      </div>
+      <div class="num-list" id="num2List"></div>
+      <div class="d-grid mb-2">
+        <button class="btn btn-outline-info" id="sumNum2Btn">Sum Number 2</button>
+      </div>
+      <div class="sum-box" id="sumNum2Box" style="display:none;">
+        Sum Number 2: <span id="sumNum2"></span>
+      </div>
+    </div>
+
+    <div class="d-grid mt-3 mb-2">
+      <button class="btn btn-success fw-bold" id="sumAllBtn">Sum of All</button>
+    </div>
+    <div class="sum-box" id="sumBox" style="display:none;">
+      Total Sum: <span id="totalSum"></span>
+    </div>
+  </div>
+
+  <script>
+    // Inputs and Buttons
+    const num1Input = document.getElementById('num1input');
+    const num2Input = document.getElementById('num2input');
+    const addNum1Btn = document.getElementById('addNum1');
+    const addNum2Btn = document.getElementById('addNum2');
+    const num1ListDiv = document.getElementById('num1List');
+    const num2ListDiv = document.getElementById('num2List');
+    const sumNum1Btn = document.getElementById('sumNum1Btn');
+    const sumNum2Btn = document.getElementById('sumNum2Btn');
+    const sumNum1Box = document.getElementById('sumNum1Box');
+    const sumNum2Box = document.getElementById('sumNum2Box');
+    const sumAllBtn = document.getElementById('sumAllBtn');
+    const sumBoxDiv = document.getElementById('sumBox');
+    const sumNum1Span = document.getElementById('sumNum1');
+    const sumNum2Span = document.getElementById('sumNum2');
+    const totalSumSpan = document.getElementById('totalSum');
+
+    let num1Arr = [];
+    let num2Arr = [];
+
+    function renderNumList(arr, container) {
+      container.innerHTML = '';
+      arr.forEach(num => {
+        const span = document.createElement('span');
+        span.textContent = num;
+        container.appendChild(span);
+      });
+    }
+
+    addNum1Btn.onclick = () => {
+      let val = num1Input.value.trim();
+      if (val !== "") {
+        num1Arr.push(Number(val));
+        num1Input.value = "";
+        renderNumList(num1Arr, num1ListDiv);
+        sumNum1Box.style.display = "none";
+        sumBoxDiv.style.display = "none";
+      } else {
+        num1Input.focus();
+      }
+    };
+
+    addNum2Btn.onclick = () => {
+      let val = num2Input.value.trim();
+      if (val !== "") {
+        num2Arr.push(Number(val));
+        num2Input.value = "";
+        renderNumList(num2Arr, num2ListDiv);
+        sumNum2Box.style.display = "none";
+        sumBoxDiv.style.display = "none";
+      } else {
+        num2Input.focus();
+      }
+    };
+
+    sumNum1Btn.onclick = () => {
+      const sum1 = num1Arr.reduce((a, b) => a + b, 0);
+      sumNum1Span.textContent = sum1;
+      sumNum1Box.style.display = "block";
+      sumNum2Box.style.display = "none";
+      sumBoxDiv.style.display = "none";
+    };
+
+    sumNum2Btn.onclick = () => {
+      const sum2 = num2Arr.reduce((a, b) => a + b, 0);
+      sumNum2Span.textContent = sum2;
+      sumNum2Box.style.display = "block";
+      sumNum1Box.style.display = "none";
+      sumBoxDiv.style.display = "none";
+    };
+
+    sumAllBtn.onclick = () => {
+      const sum1 = num1Arr.reduce((a, b) => a + b, 0);
+      const sum2 = num2Arr.reduce((a, b) => a + b, 0);
+      const total = sum1 + sum2;
+      totalSumSpan.textContent = total;
+      sumBoxDiv.style.display = "block";
+      sumNum1Box.style.display = "none";
+      sumNum2Box.style.display = "none";
+    };
+
+    num1Input.addEventListener("keyup", function(event) {
+      if (event.key === "Enter") addNum1Btn.click();
+    });
+    num2Input.addEventListener("keyup", function(event) {
+      if (event.key === "Enter") addNum2Btn.click();
+    });
+
+    renderNumList(num1Arr, num1ListDiv);
+    renderNumList(num2Arr, num2ListDiv);
+  </script>
+</body>
+</html>
