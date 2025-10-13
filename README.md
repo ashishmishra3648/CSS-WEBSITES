@@ -203,8 +203,42 @@ Reset Function: Click the "Reset Counter" button to return the count to zero
 
 Responsive Design: The layout adapts to different screen sizes while maintaining functionality
 
+
+
+=====================================================================================================================================================================================
+
+# Circle Creation and Deletion Web App
+
+## Overview
+An interactive and visually appealing web application allowing users to dynamically create multiple circles, select any number of them, and delete selected circles. The app provides live counts for total circles and selected circles.
+
+## Features
+- **Create Circles Dynamically**: Click a button to add new circles to the display area.
+- **Select/Deselect Circles**: Click any circle to toggle its selection state. Selected circles change appearance for clear identification.
+- **Delete Selected Circles**: Remove all selected circles with a single button click.
+- **Live Counters**: View real-time counts of total circles created and the number currently selected.
+- **Responsive and User-Friendly UI**: Styled with Bootstrap 5 and custom CSS for a clean, modern look and seamless user experience.
+
+## Tech Stack
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5**
+- **JavaScript (Vanilla)**
+
+## How to Use
+1. Press **CREATE CIRCLE** to add a new circle on the screen.
+2. Click on circles to select or deselect them.
+3. Press **DELETE CIRCLE** to remove all selected circles.
+4. Observe the total circles and selected circles counts update instantly.
+
+## Accessibility
+- Circles are marked with appropriate ARIA roles and labels.
+- Buttons have clear aria-labels for screen readers.
+- Visual feedback ensures selected circles are distinct.
+
 ## Demo Preview
-<img width="1847" height="856" alt="image" src="https://github.com/user-attachments/assets/2c2a9065-969a-4dd3-8bbb-f466ee02c28f" />
+<img width="1892" height="520" alt="image" src="https://github.com/user-attachments/assets/6e076f8b-b315-4f46-844b-b185893eed72" />
+
 
 
 
