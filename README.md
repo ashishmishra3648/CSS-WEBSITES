@@ -241,4 +241,44 @@ An interactive and visually appealing web application allowing users to dynamica
 
 
 
+=====================================================================================================================================================================================
+
+
+
+# Number Sections and Sums Web App
+
+## Overview
+A clean and modern web application built with **HTML5**, **CSS3**, and **Bootstrap 5** to add numbers into two separate sections ("Number 1" and "Number 2"), display their individual lists, compute individual sums, and also compute the total sum across both sections.
+
+## Features
+- **Two Distinct Number Sections**: Input and add numbers independently to each section.
+- **Live Number Lists**: Display the list of numbers added under each section with clear styling.
+- **Individual Sum Calculations**: Buttons to calculate and show the sum of all numbers in each section.
+- **Total Sum Calculation**: Button to compute and display the combined total sum of both number lists.
+- **Responsive Design**: Uses Bootstrap 5 for a mobile-friendly and responsive interface.
+- **Keyboard Support**: Pressing Enter in input fields triggers the respective Add action.
+
+## Tech Stack
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5**
+- **Vanilla JavaScript**
+
+## Usage
+1. Enter numeric values into the Number 1 or Number 2 input box.
+2. Click the **Add** button next to the input or press Enter to add the number to the respective list.
+3. Click **Sum Number 1** or **Sum Number 2** to view the total sum of each list.
+4. Click **Sum of All** to view the total sum of both lists combined.
+5. Lists update dynamically with each addition.
+
+## Accessibility
+- Semantic markup and ARIA attributes provide screen reader friendliness.
+- Clear visual feedback underlines interactive elements and results.
+
+## Demo Preview
+<img width="1000" height="845" alt="image" src="https://github.com/user-attachments/assets/b8f12cea-612b-4eac-bf0e-77ff4ebc920d" />
+
+
+
+
 
