@@ -30,7 +30,6 @@ It allows users to add food items with name, type (**Veg/Non-Veg**), and price, 
 
 A simple and responsive **Login Form web app** built with **HTML, CSS, and Bootstrap**.  
 It provides a modern login UI with username, password, gender options, and icons for better user experience.  
-
 ---
 
 ## 🚀 Features  
