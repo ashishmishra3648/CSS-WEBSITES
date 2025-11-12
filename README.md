@@ -133,9 +133,7 @@ Utilizes Bootstrap's spacing (margin, padding), color schemes, button groups, an
 
 ## 🛠️ Tech Stack
 HTML5
-
 Bootstrap 5
-
 JavaScript
 
 ## 📄 User Flow
