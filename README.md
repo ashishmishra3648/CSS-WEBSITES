@@ -1,7 +1,7 @@
 # 🍽️ Restaurant Menu Website  
 
 A simple and responsive **Restaurant Menu web app** built with **HTML, CSS, and Bootstrap**.  
-It allows users to add food items with name, type (**Veg/Non-Veg**), and price, and view them neatly categorized into **Veg** and **Non-Veg menus**.  
+It allows users to add food items with name, type (**Veg/Non-Veg**), and price, and view them neatly categorized into **Veg** and **Non-Veg menus**. 
 ---
 
 ## 🚀 Features  
