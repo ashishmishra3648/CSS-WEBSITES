@@ -307,5 +307,3 @@ An interactive and visually appealing web application built with **HTML5**, **CS
 
 ## Demo Preview
 <img width="655" height="643" alt="image" src="https://github.com/user-attachments/assets/13c28778-3780-4d3d-acf1-6bc23a7d420e" />
-
-
